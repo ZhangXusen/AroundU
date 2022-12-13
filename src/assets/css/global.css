@@ -1,0 +1,75 @@
+.panel {
+    position: relative;
+    height: 12.875rem;
+    border: 1px solid rgba(25, 185, 139, 0.17);
+    background: url(../images/line.png) rgba(255, 255, 255, .03);
+    margin-bottom: 15px;
+    padding: 0 15px 40px;
+    overflow: hidden;
+}
+
+.panel::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: "";
+}
+
+.panel::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: "";
+}
+
+.panel-foot {
+    position: absolute;
+    flex:1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.panel-foot::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+    content: "";
+}
+
+.panel-foot::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+    content: "";
+}
+
+.panel h2 {
+    height: 2.5rem;
+    color: #fff;
+    line-height: 2.6rem;
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+.charts {
+    height: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
